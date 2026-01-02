@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+}
+
+.card {
+  background: white;
+  border-radius: 15px; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.username {
+  font-size: 1.5rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.role {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
