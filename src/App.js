@@ -6,6 +6,8 @@ import { Blogpost } from "./components/Blogpost";
 import { LoginPage } from "./components/LoginPage";
 import { LogOutPage } from "./components/Logout";
 import { OutProvider, OutRoute } from "./components/out";
+import { HomePage } from "./components/HomePage";
+import { AboutPage } from "./components/AboutPage"; 
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
       <OutProvider>
         <Menu />
         <Routes>
-          <Route path="/" element={<div>Home Page</div>} />
-          <Route path="/about" element={<div>About Page</div>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
 
           <Route path="/profile" element={
             <OutRoute><ProfilePage /></OutRoute>

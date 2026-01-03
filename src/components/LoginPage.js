@@ -7,11 +7,19 @@ function LoginPage() {
     const out = useOut();
     const [username, setUsername] = React.useState("");
     const [password, setPassword] = React.useState("");
+    const [errorMessage, setErrorMessage] = React.useState("");
 
     const login = (e) => {
         e.preventDefault();
+        if (password.length < 6) {
+        setErrorMessage("Campo obligatiorio");
+        } else {
+        setErrorMessage("");
         out.login({ username });
+        }
+
     };
+
 
     if (out.user) {
         return <Navigate to="/profile" />;
@@ -34,10 +42,11 @@ function LoginPage() {
                     Password:
                     <input
                         type="password"
-                        className={styles.input}
+                        className={`${styles.input} ${errorMessage ? styles.inputError : ""}`}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
+                    {errorMessage && <span className={styles.errorMessage}>{errorMessage}</span>}
                 </label>
                 <button type="submit" className={styles.submitBtn}>Login</button>
             </form>

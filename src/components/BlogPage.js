@@ -1,7 +1,6 @@
 import React from "react";
-import { Link,Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useOut } from "./out";
-import { Blogpost } from "./Blogpost";
 import styles from "../Modules.css/BlogPage.module.css";
 
 export function BlogPage() {
@@ -11,6 +10,7 @@ export function BlogPage() {
       <h1 className={styles.title}>Explora nuestro Blog</h1>
 
       <Outlet/>
+
 
       <ul className={styles.postGrid}>
         {Out.blogPost.map((post, idx) => (

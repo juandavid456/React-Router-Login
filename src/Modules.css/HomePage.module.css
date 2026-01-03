@@ -1,0 +1,34 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.mainTitle {
+  font-size: 3rem;
+  color: #2d3436;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #636e72;
+  max-width: 600px;
+}
+
+.ctaButton {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -13,6 +13,7 @@ const blogdata = [
     content:
       "react es una libreria de javascript para construir interfaces de usuario",
       author: getRandomauthor(),
+      description: "Aprende las bases de la librería más popular para crear interfaces dinámicas."
   },
   {
     title: "que es vue",
@@ -20,6 +21,7 @@ const blogdata = [
     content:
       "vue es un framework de javascript para construir interfaces de usuario",
       author: getRandomauthor(),
+      description: "Descubre la sencillez y potencia de Vue para tus próximos proyectos.",
   },
   {
     title: "que es angular",
@@ -27,6 +29,7 @@ const blogdata = [
     content:
       "angular es un framework de javascript para construir aplicaciones web",
     author: getRandomauthor(),
+    description: "Explora el robusto ecosistema de Google para aplicaciones de gran escala.",
   },
 ];
 

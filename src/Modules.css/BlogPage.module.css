@@ -41,3 +41,20 @@
   font-size: 1.2rem;
   text-align: center;
 }
+.postTitle {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+.postDescription {
+  margin: 0;
+  font-size: 1rem;
+  color: #666; 
+  line-height: 1.5;
+}
+.blogLayout {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
+}
