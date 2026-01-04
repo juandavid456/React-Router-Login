@@ -1,0 +1,50 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.formCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formTitle {
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.formInput, .formTextarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.formTextarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.formButton {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.formButton:hover {
+  background-color: #0056b3;
+}

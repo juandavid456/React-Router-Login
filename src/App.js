@@ -8,6 +8,7 @@ import { LogOutPage } from "./components/Logout";
 import { OutProvider, OutRoute } from "./components/out";
 import { HomePage } from "./components/HomePage";
 import { AboutPage } from "./components/AboutPage"; 
+import { NewPost } from "./components/NewPost";
 
 function App() {
   return (
@@ -17,22 +18,19 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-
           <Route path="/profile" element={
             <OutRoute><ProfilePage /></OutRoute>
           } />
-
-
           <Route path="/blog" element={<BlogPage />}>
-            <Route
-              path=":slug"
-              element={
+           <Route path="new" element={<NewPost />} />
+            <Route path=":slug" element={
                 <OutRoute>
                   <Blogpost />
                 </OutRoute>
               }
             />
           </Route>
+         
 
           <Route path="/login" element={<LoginPage />} />
           <Route path="/logout" element={<LogOutPage />} />

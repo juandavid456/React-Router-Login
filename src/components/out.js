@@ -12,6 +12,27 @@ function OutProvider({ children }) {
     const [blogPost, setBlogPost] = React.useState(blogdata);
     const [redirectTo, setRedirectTo] = React.useState(null);
 
+
+    const createPost = ({ title, content }) => {
+        const slug = title.toLowerCase().replace(/\s+/g, '-');
+    
+            const newPost = {
+            title,
+            slug,
+            content,
+        };
+
+        setBlogPost([...blogPost, newPost]);
+        navigate("/blog"); 
+};
+
+    const editPost = (slug, updatedPost) => {
+        const newPosts = blogPost.map(post => 
+        post.slug === slug ? { ...post, ...updatedPost } : post
+    );
+    setBlogPost(newPosts);
+};
+
     const deletePost = (slug) => {
         const newPosts = blogPost.filter(post => post.slug !== slug);
         setBlogPost(newPosts);
@@ -46,7 +67,9 @@ function OutProvider({ children }) {
         logout,
         blogPost,
         setBlogPost,
+        createPost,
         deletePost,
+        editPost,
         redirectTo,
         saveCurrentRoute,
     };

@@ -9,6 +9,12 @@ export function BlogPage() {
     <div className={styles.container}>
       <h1 className={styles.title}>Explora nuestro Blog</h1>
 
+      {Out.user && (
+        <Link to="/blog/new">
+          <button>Crear Nuevo Post</button>
+        </Link>
+      )}
+
       <Outlet/>
 
 
