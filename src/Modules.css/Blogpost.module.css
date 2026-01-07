@@ -1,0 +1,117 @@
+.actionButton {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+
+.editBtn {
+  background-color: #4facfe;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #0081ff;
+  transform: translateY(-2px);
+}
+
+
+.deleteBtn {
+  background-color: #ff4d4d;
+  color: white;
+  margin-top: 10px;
+}
+
+.deleteBtn:hover {
+  background-color: #cc0000;
+}
+
+.backBtn {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.backBtn:hover {
+  background-color: #e4e6eb;
+}
+
+.linkButton {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f0f2f5;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.linkButton:hover {
+  background-color: #e4e6eb;
+}
+
+/* Editing Styles */
+.editContainer {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.editInput,
+.editTextarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.editTextarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.saveBtn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.saveBtn:hover {
+  background-color: #218838;
+}
+
+.cancelBtn {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancelBtn:hover {
+  background-color: #5a6268;
+}

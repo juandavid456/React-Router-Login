@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../Modules.css/HomePage.module.css"; 
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -8,7 +9,9 @@ function HomePage() {
       <p className={styles.subtitle}>
         Explora nuestro blog y descubre las últimas novedades sobre tecnología.
       </p>
-      <button className={styles.ctaButton}>Empezar a leer</button>
+      <Link to="/blog">
+        <button className={styles.Button}>Empezar a leer</button>
+      </Link>
     </div>
   );
 }

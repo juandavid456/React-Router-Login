@@ -11,7 +11,7 @@ export function BlogPage() {
 
       {Out.user && (
         <Link to="/blog/new">
-          <button>Crear Nuevo Post</button>
+          <button className={styles.actionButton}>Crear Nuevo Post</button>
         </Link>
       )}
 

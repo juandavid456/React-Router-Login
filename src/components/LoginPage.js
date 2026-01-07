@@ -12,7 +12,7 @@ function LoginPage() {
     const login = (e) => {
         e.preventDefault();
         if (password.length < 6) {
-        setErrorMessage("Campo obligatiorio");
+        setErrorMessage("Error contraseña debe tener al menos 6 caracteres");
         } else {
         setErrorMessage("");
         out.login({ username });
@@ -45,6 +45,7 @@ function LoginPage() {
                         className={`${styles.input} ${errorMessage ? styles.inputError : ""}`}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        required
                     />
                     {errorMessage && <span className={styles.errorMessage}>{errorMessage}</span>}
                 </label>

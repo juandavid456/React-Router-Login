@@ -58,3 +58,44 @@
   padding: 20px;
   align-items: flex-start;
 }
+
+.actionButton {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+
+.editBtn {
+  background-color: #4facfe;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #0081ff;
+  transform: translateY(-2px);
+}
+
+
+.deleteBtn {
+  background-color: #ff4d4d;
+  color: white;
+  margin-top: 10px;
+}
+
+.deleteBtn:hover {
+  background-color: #cc0000;
+}
+
+.backBtn {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.backBtn:hover {
+  background-color: #e4e6eb;
+}
